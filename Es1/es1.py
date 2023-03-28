@@ -2,6 +2,7 @@ import streamlit as st
  
  
 st.title("Primo esercizio")
+st.title("accidenti")
 st.header("Idoneità alla guida")
 
 age=st.number_input(label="Inserisci la tua età", max_value=100, min_value=0 )
