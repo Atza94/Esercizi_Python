@@ -8,13 +8,13 @@ age=st.number_input(label="Inserisci la tua età", max_value=100, min_value=0 )
 
 patente=st.radio(label="Hai la patente?", options=("Si","No"))
     
-print(license)
+st.write(license)
 
 def license (age,patente):
-    if age  >= 18 and patente == "Si":
-        return("Sei idoneo alla guida")
+    if age  > 18 and patente == str("Si"):
+        return "Sei idoneo alla guida"
     else:
-        return("Non sei idoneo alla guida")
+        return "Non sei idoneo alla guida"
 
 
 #def main():
