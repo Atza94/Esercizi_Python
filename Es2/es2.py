@@ -4,12 +4,20 @@
 # inserimento con text input ver0.2
 import streamlit as st
 import numpy as np
+
+
+
+
+
+
+
 def main():
     st.header("Secondo esercizio")
     st.subheader("sorter automatico")
 
     a=st.slider('seleziona il primo numero', 0.0, 100.0)
     b=st.slider('seleziona il secondo numero', 0.0, 100.0)
+    c=st.slider('seleziona il terzo numero')
     
     
 
