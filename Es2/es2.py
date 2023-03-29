@@ -8,8 +8,8 @@ def main():
     st.header("Secondo esercizio")
     st.subheader("sorter automatico")
 
-    a=st.slider('seleziona il primo numero', 0.0, 100)
-    b=st.slider('seleziona il secondo numero', 0.0, 100)
+    a=st.slider('seleziona il primo numero', 0.0, 100.0)
+    b=st.slider('seleziona il secondo numero', 0.0, 100.0)
     
     
 
