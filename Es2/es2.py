@@ -8,7 +8,7 @@ def main():
     st.header("Secondo esercizio")
     st.subheader("sorter automatico")
 
-    num01= st.slider('selezione il primo numero', float(0, 100))
+st.slider('selezione il primo numero', float(0, 100))
     
     
 
