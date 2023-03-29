@@ -1,34 +1,36 @@
 import streamlit as st
  
  
-st.title("Primo esercizio")
-st.header("Idoneità alla guida")
+def idoneita_eta(age,patente):
+    if age >= 18 and patente == "Si":
+        stato = "abilitato"
+        return stato
+    elif age >= 18 and patente =="No":
+        stato = "non abilitato"
+        return stato
+    elif age <= 18 and age >= 0:
+        stato = "non puoi ancora guidare"
+        return stato
 
-x = st.number_input(label="Inserisci la tua età", max_value=100, min_value=0, step=1, on_change="idoneita_eta()")
-
-y = st.radio(label="Hai la patente?", options=("Si","No"))
-
-def idoneita_eta(x):
-    if x >= "18":
-        return True
-    else:
-        return False
-
-if idoneita_eta == True:
-     st.write("abilitato")
-else:
-     st.write("non abilitato")
    
         
 
    
 
 
-# #def main():
+def main():
+
+    st.title("Primo esercizio")
+    st.header("Idoneità alla guida")
+    x = st.number_input(label="Inserisci la tua età", max_value=100, min_value=0, step=1)
+    y = st.radio(label="Hai la patente?", options=("Si","No"))
+
+    caso = idoneita_eta(x,y)
+
+    st.text(caso)
 
 
 
-
-# #if __name__ == "__main__":
-#   # main()
+if __name__ == "__main__":
+  main()
     
