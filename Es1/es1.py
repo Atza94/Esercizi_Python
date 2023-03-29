@@ -19,7 +19,7 @@ if idoneità == True:
 else:
      st.write("non abilitato")
 
-st.button('conferma dati', on_click=idoneità())
+st.button('conferma dati', on_click="idoneità()")
 
 
         
