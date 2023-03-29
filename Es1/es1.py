@@ -4,7 +4,7 @@ import streamlit as st
 st.title("Primo esercizio")
 st.header("Idoneità alla guida")
 
-x = st.number_input(label="Inserisci la tua età", max_value=100, min_value=0, step=1)
+x = st.number_input(label="Inserisci la tua età", max_value=100, min_value=0, step=1, on_change="idoneita_eta()")
 
 y = st.radio(label="Hai la patente?", options=("Si","No"))
 
