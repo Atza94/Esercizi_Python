@@ -13,22 +13,17 @@ def idoneita_eta(age,patente):
         return stato
 
    
-        
-
-   
-
-
 def main():
 
     st.title("Primo esercizio")
     st.header("Idoneità alla guida")
     x = st.number_input(label="Inserisci la tua età", max_value=100, min_value=0, step=1)
     y = st.radio(label="Hai la patente?", options=("Si","No"))
-
+#checkbox, slider eta,
     caso = idoneita_eta(x,y)
 
     st.text(caso)
-
+#inserire funz in una variabile richiamata da metodo st per testo
 
 
 if __name__ == "__main__":
