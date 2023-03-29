@@ -6,10 +6,10 @@ st.header("Idoneità alla guida")
 
 x=st.number_input(label="Inserisci la tua età", max_value=100, min_value=0, step=1)
 
-y = st.radio(label="Hai la patente?", options=("Si","No"))
+y = st.radio(label="Hai la patente?", options=("Si","No"), index=0)
 
 def idoneità(x,y):
-    if x >= 18 and y == "Si":
+    if x >= 18 and y == [0]:
         return True
     else:
         return False
@@ -19,7 +19,7 @@ if idoneità == True:
 else:
      st.write("non abilitato")
 
-st.button('conferma dati', on_click="idoneità()")
+st.button('conferma dati', on_click=idoneità())
 
 
         
