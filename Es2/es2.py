@@ -4,7 +4,7 @@
 # inserimento con text input ver0.2
 import streamlit as st
 import numpy as np
-def __main__():
+def main():
     st.header("Secondo esercizio")
     st.subheader("sorter automatico")
 
@@ -12,5 +12,5 @@ def __main__():
     
     
 
-    if __name__==__main__:
-        __main__()
+if __name__=="__main__":
+    main()
