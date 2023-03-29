@@ -21,7 +21,7 @@ else:
 
 st.button('conferma dati', on_click="license()")
 
-def license(self,y):
+def license(x,y):
     if x != "":
         y = st.radio(label="Hai la patente?", options=("Si","No"), disabled=False)
         
