@@ -26,6 +26,6 @@ def main():
 #inserire funz in una variabile richiamata da metodo st per testo
 
 
-if __name__ == "__main__":
-  main()
+    if __name__ == "__main__":
+        main()
     
