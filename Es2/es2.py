@@ -5,10 +5,10 @@
 import streamlit as st
 import numpy as np
 def main():
-st.header("Secondo esercizio")
-st.subheader("sorter automatico")
+    st.header("Secondo esercizio")
+    st.subheader("sorter automatico")
 
-st.slider('selezione il primo numero', 0, 100)
+    st.slider('selezione il primo numero', 0, 100)
     
     
 
