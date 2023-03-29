@@ -23,7 +23,7 @@ st.subheader("sorter automatico")
 
 a=st.slider('seleziona il primo numero', 0.0, 100.0)
 b=st.slider('seleziona il secondo numero', 0.0, 100.0)
-c=st.slider('seleziona il terzo numero')
+c=st.slider('seleziona il terzo numero' 0.0,100.0)
     
 ordine=sort(a,b,c)
 st.text(ordine)   
