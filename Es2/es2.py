@@ -5,7 +5,13 @@
 import streamlit as st
 import numpy as np
 
+def sort(x,y,z):
+    lst=[x,y,z]
+    lst.sort()
+    return lst
 
+
+    
 
 
 
@@ -13,13 +19,14 @@ import numpy as np
 
 def main():
     st.header("Secondo esercizio")
-    st.subheader("sorter automatico")
+st.subheader("sorter automatico")
 
-    a=st.slider('seleziona il primo numero', 0.0, 100.0)
-    b=st.slider('seleziona il secondo numero', 0.0, 100.0)
-    c=st.slider('seleziona il terzo numero')
+a=st.slider('seleziona il primo numero', 0.0, 100.0)
+b=st.slider('seleziona il secondo numero', 0.0, 100.0)
+c=st.slider('seleziona il terzo numero')
     
-    
+ordine=sort(a,b,c)
+st.text(ordine)   
 
 if __name__=="__main__":
     main()
